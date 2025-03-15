@@ -1,6 +1,6 @@
 import { expect, Page } from "@playwright/test";
 
-
+//locators
 const navbarHeading = (page:Page) => page.getByRole("heading", { name: "Playwright Library" });
 const properties = (page:Page) => ({
   chromium: () => page.getByRole("link", { name: "chromium", exact: true }),
@@ -12,6 +12,8 @@ const properties = (page:Page) => ({
   webkit: () => page.getByRole("link", { name: "webkit", exact: true }),
 });
 
+
+//functions
 export async function isOnApiPage(page:Page) {
   await navbarHeading(page).waitFor({ state: "attached"});
   await expect(navbarHeading(page)).toBeVisible();
