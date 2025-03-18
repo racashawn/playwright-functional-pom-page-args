@@ -9,35 +9,47 @@ test("test1", async ({page}) => {
   await getStartedPage.clickApiLink(page);
   await apiPage.isOnApiPage(page);
   await apiPage.clickChromium(page);
+  await homePage.navigateToHomepage(page);
+  await getStartedPage.getStarted(page);
+  await getStartedPage.clickApiLink(page);
+  await apiPage.isOnApiPage(page);
+  await apiPage.clickChromium(page);
+  await homePage.navigateToHomepage(page);
+  await getStartedPage.getStarted(page);
+  await getStartedPage.clickApiLink(page);
+  await apiPage.isOnApiPage(page);
+  await apiPage.clickChromium(page);
 });
 
 test("test2", async ({page}) => {
   await homePage.navigateToHomepage(page);
   await getStartedPage.getStarted(page);
   await getStartedPage.clickApiLink(page);
-//   await getPage().pause()
   await apiPage.isOnApiPage(page);
-})
-
-;test("test3", async ({page}) => {
   await homePage.navigateToHomepage(page);
   await getStartedPage.getStarted(page);
   await getStartedPage.clickApiLink(page);
-//   await getPage().pause()
+  await apiPage.isOnApiPage(page);
+  await homePage.navigateToHomepage(page);
+  await getStartedPage.getStarted(page);
+  await getStartedPage.clickApiLink(page);
   await apiPage.isOnApiPage(page);
 });
+
 test("test4", async ({page}) => {
   await homePage.navigateToHomepage(page);
   await getStartedPage.getStarted(page);
   await getStartedPage.clickApiLink(page);
-//   await getPage().pause()
+//   await getPage().pausepage()
   await apiPage.isOnApiPage(page);
-});
-
-test("test5", async ({page}) => {
   await homePage.navigateToHomepage(page);
   await getStartedPage.getStarted(page);
   await getStartedPage.clickApiLink(page);
-//   await getPage().pause()
+//   await getPage().pausepage()
+  await apiPage.isOnApiPage(page);
+  await homePage.navigateToHomepage(page);
+  await getStartedPage.getStarted(page);
+  await getStartedPage.clickApiLink(page);
+//   await getPage().pausepage()
   await apiPage.isOnApiPage(page);
 });
