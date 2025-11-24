@@ -6,7 +6,6 @@ import * as apiPage from "../page-objects/apiPage";
 test("test1", async ({page}) => {
   await homePage.navigateToHomepage(page);
   await getStartedPage.getStarted(page);
-  await page.pause()
   await getStartedPage.clickApiLink(page);
   await apiPage.isOnApiPage(page);
   await apiPage.clickChromium(page);
